@@ -1,0 +1,76 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+% \cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{1366} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ifcvprfinal\pagestyle{empty}\fi
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Dense Quantity Convolutional Networks}
+
+\author{First Author\\
+Institution1\\
+Institution1 address\\
+{\tt\small firstauthor@i1.org}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Second Author\\
+Institution2\\
+First line of institution2 address\\
+{\tt\small secondauthor@i2.org}
+}
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+	Convolutional neural network (CNN) has gained great achievements in computer vision area and the depth of CNN influences much on the performance which promotes CNN structures to be deeper and larger. 
+	In this paper, we research on how thin a CNN could be and find out that a thin network (TNet) could still achieve persuasive performance even with much less parameters at each layer, in other words, the width of a network could easily generate redundancy. To exploit the performance of TNet, we adopt the merit of boosting based methods to propose a group of parallel TNets and merge their predictions.
+	Due to the persuasive result given by each TNet and advantage of boosting, the performance of ensemble model could be competitive. Moreover, since each TNet is extremely small, the whole structure could run fast in the test stage since TNets could run in parallel. For the image classification CIFAR10 dataset, we have achieved the state-of-the-art performance with 10 TNets, each of which is only 300KB. On the ICDAR2015 Incidental Scene Text dataset, we also achieve the state-of-the-art performance on the detection task with F-measure 83\%. Our detection structure contains 10 TNets, each of which is only 800KB and the running speed of our structure could achieve xx fps in multi-scale testing mode.
+	
+\end{abstract}
+
+\section{Introduction}
+	Deep convolutional neural networks plays a dominant role in computer vision area. Recent works [alexnet] [vggnet] [googlenet] [resnet] [densenet] on image classification demonstrate the necessity of ``depth'' attribute for CNN.
+	and	recent years have seen its great variation in structure design and performance improvement on various computer vision tasks. The key point in CNNs structure design
+	 
+\section{Related Work}
+\section{Methodology}
+
+\subsection{Network Architectures}
+\noindent \textbf{Original Network.} We adopt recent  
+
+
+
+\section{Experiments}
+\section{Conclusion}
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}
